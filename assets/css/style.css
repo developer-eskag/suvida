@@ -892,7 +892,7 @@ HOW TO TAKE SUVIDA
 .guide-steps{
     display:flex;
     flex-direction:column;
-    gap:2rem;
+    gap:1.5rem;
 }
 
 .step{
@@ -1260,7 +1260,7 @@ HOW TO TAKE SUVIDA
 }
 
 .guide-bottom{
-    margin-top:2rem;
+    margin-top:1rem;
     display:grid;
     grid-template-columns:repeat(3,1fr);
     gap:24px;
@@ -1269,18 +1269,13 @@ HOW TO TAKE SUVIDA
 .guide-highlight{
     background:#fff;
     border-radius:22px;
-    padding:28px;
+    padding:15px;
     text-align:center;
     border:1px solid var(--clr-border);
     box-shadow:var(--shadow-sm);
-}
-
-.guide-highlight strong{
-    display:block;
-    font-size:3rem;
-    color:var(--clr-primary);
-    line-height:1;
-    margin-bottom:.75rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
 }
 
 /* ========================================
