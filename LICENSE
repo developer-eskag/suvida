@@ -1,0 +1,23 @@
+
+---
+
+## License
+
+Since this is **client work**, I would **not** use MIT, Apache, or GPL. Those licenses allow reuse.
+
+Instead, create a file named **LICENSE** with:
+
+```text
+Copyright (c) 2026 Eskag Pharma Pvt. Ltd.
+
+All Rights Reserved.
+
+This repository and its contents, including but not limited to source code,
+designs, layouts, graphics, images, documentation, and other assets, are the
+exclusive property of Eskag Pharma Pvt. Ltd.
+
+No part of this repository may be copied, modified, distributed, published,
+reproduced, sublicensed, or used for commercial or non-commercial purposes
+without prior written permission from Eskag Pharma Pvt. Ltd.
+
+Unauthorized use is strictly prohibited.
