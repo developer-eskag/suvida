@@ -1,0 +1,283 @@
+/* ========================================
+   RESET
+======================================== */
+
+*,
+*::before,
+*::after{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* ========================================
+   DOCUMENT
+======================================== */
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:var(--ff-primary);
+    font-size:var(--fs-100);
+    font-weight:400;
+    line-height:1.5;
+    color:var(--clr-body);
+    background:var(--clr-bg);
+    -webkit-font-smoothing:antialiased;
+    text-rendering:optimizeLegibility;
+}
+
+::selection{
+    background:var(--clr-primary);
+    color:var(--clr-white);
+}
+
+/* ========================================
+   MEDIA
+======================================== */
+
+img,
+picture{
+    display:block;
+    max-width:100%;
+    height:auto;
+}
+
+svg{
+    display:block;
+}
+
+/* ========================================
+   LINKS
+======================================== */
+
+a{
+    color:inherit;
+    text-decoration:none;
+    transition:var(--transition);
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible{
+    outline:2px solid var(--clr-primary);
+    outline-offset:2px;
+}
+
+/* ========================================
+   LISTS
+======================================== */
+
+ul,
+ol{
+    list-style:none;
+}
+
+/* ========================================
+   FORMS
+======================================== */
+
+button,
+input,
+textarea,
+select{
+    font:inherit;
+}
+
+button{
+    border:none;
+    background:none;
+    cursor:pointer;
+}
+
+/* ========================================
+   TYPOGRAPHY
+======================================== */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    color:var(--clr-heading);
+    line-height:1.2;
+}
+
+h1,
+h2{
+    font-weight:800;
+}
+
+h3,
+h4{
+    font-weight:700;
+}
+
+h5,
+h6{
+    font-weight:600;
+}
+
+p:last-child{
+    margin-bottom:0;
+}
+
+p{
+    margin-bottom:1rem;
+}
+
+/* ========================================
+   CONTAINER
+======================================== */
+
+.container{
+    width:min(
+        calc(100% - (var(--container-padding) * 2)),
+        var(--container-width)
+    );
+    margin-inline: auto;
+}
+
+.content{
+    max-width:var(--content-width);
+}
+
+/* ========================================
+   SECTION SPACING
+======================================== */
+
+.section{
+    padding:var(--space-xl) 0;
+}
+
+.section-tag{
+    display:inline-flex;
+    align-items:center;
+    gap:.6rem;
+
+    margin-bottom:1rem;
+
+    font-size:.875rem;
+    font-weight:700;
+    letter-spacing:.08em;
+    text-transform:uppercase;
+
+    color:var(--clr-primary);
+}
+
+.section-tag::before{
+    content:"";
+    width:10px;
+    height:10px;
+    border-radius:50%;
+    background:var(--clr-primary);
+}
+
+/* ========================================
+   HEADING
+======================================== */
+
+h1{
+    font-size:var(--fs-700);
+}
+
+h2{
+    font-size:var(--fs-600);
+}
+
+h3{
+    font-size:var(--fs-500);
+}
+
+h4{
+    font-size:var(--fs-400);
+}
+
+h5{
+    font-size:var(--fs-300);
+}
+
+h6{
+    font-size:var(--fs-200);
+}
+
+/* ========================================
+   Utility Classes
+======================================== */
+.text-center{
+    text-align:center;
+}
+
+.d-flex{
+    display:flex;
+}
+
+.align-center{
+    align-items:center;
+}
+
+.justify-between{
+    justify-content:space-between;
+}
+
+/* ========================================
+   Section Header
+======================================== */
+.section-header{
+    max-width:700px;
+    margin:0 auto 3rem;
+    text-align:center;
+}
+
+.section-header h2{
+    margin-bottom:1rem;
+}
+
+.section-header p{
+    color:var(--clr-body);
+}
+
+/* ========================================
+   BUTTONS
+======================================== */
+.btn{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    min-height:52px;
+    padding:0 28px;
+    border-radius:var(--radius-pill);
+    font-size:var(--fs-100);
+    font-weight:700;
+    transition:
+        background .3s ease,
+        color .3s ease,
+        transform .3s ease,
+        box-shadow .3s ease;
+}
+
+.btn:hover{
+    transform:translateY(-2px);
+}
+
+.btn-primary{
+    background:var(--clr-primary);
+    color:var(--clr-white);
+}
+
+.btn-primary:hover{
+    background:var(--clr-primary-dark);
+}
+
+.btn-outline{
+    border:1px solid rgba(255,255,255,.4);
+    color:var(--clr-white);
+}
+
+.btn-outline:hover{
+    background:rgba(255,255,255,.1);
+}
