@@ -692,38 +692,24 @@
 .guide-title{
     display:flex;
     gap:1rem;
-    margin-bottom:2rem;
+    margin-bottom:1rem;
 }
 
 .guide-title h3{
     margin-bottom:.5rem;
 }
 
-.guide-title p{
-    font-size:.95rem;
-    color:var(--clr-body);
-}
-
-.guide-icon{
-    width:56px;
-    height:56px;
-    flex-shrink:0;
-    border-radius:50%;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    font-size:1.35rem;
-    font-weight:700;
-}
-
-.guide-icon.success{
-    background:#EAF8F0;
+.guide-title .success{
     color:var(--clr-success);
 }
 
-.guide-icon.danger{
-    background:#FFF1F3;
+.guide-title .danger{
     color:#E5484D;
+}
+
+.guide-title p{
+    font-size:.95rem;
+    color:var(--clr-body);
 }
 
 .guide-list{
