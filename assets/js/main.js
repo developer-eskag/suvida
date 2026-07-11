@@ -134,6 +134,21 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     /*=========================================
+        HEALTH BENEFITS
+    =========================================*/
+    const benefitItems = document.querySelectorAll(".benefit-item");
+    benefitItems.forEach(item => {
+        item.querySelector(".benefit-header").addEventListener("click",()=>{
+            benefitItems.forEach(i=>{
+                if(i!==item){
+                    i.classList.remove("active");
+                }
+            });
+            item.classList.toggle("active");
+        });
+    });
+
+    /*=========================================
         WOMEN'S HEALTHCARE PRODUCTS
     =========================================*/
 
