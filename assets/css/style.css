@@ -1362,12 +1362,8 @@ HOW TO TAKE SUVIDA
     grid-template-columns:480px 1fr;
     gap:4rem;
     align-items:center;
-    margin-top:4rem;
-}
-
-.product-showcase{
     background:#fff;
-    padding:55px;
+    padding:30px;
     border-radius:32px;
     border:1px solid var(--clr-border);
     box-shadow:0 25px 60px rgba(15,23,42,.06);
@@ -1378,7 +1374,9 @@ HOW TO TAKE SUVIDA
     display:flex;
     justify-content:center;
     align-items:center;
-    min-height:480px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .product-glow{
@@ -1412,7 +1410,7 @@ HOW TO TAKE SUVIDA
     display:grid;
     grid-template-columns:repeat(2,1fr);
     gap:16px;
-    margin:35px 0;
+    margin:25px 0;
 }
 
 .feature-card{
@@ -1430,10 +1428,16 @@ HOW TO TAKE SUVIDA
 
 .composition-card{
     margin-top:20px;
-    padding:22px;
+    padding:18px;
     border-radius:18px;
     background:#FFF8FC;
     border:1px solid rgba(192,16,160,.12);
+}
+
+.composition-card h4 {
+    font-size: 18px;
+    padding-bottom: 5px;
+    color: var(--clr-primary);
 }
 
 .product-nav{
@@ -1521,10 +1525,18 @@ HOW TO TAKE SUVIDA
 }
 
 .product-subtitle{
-    margin:.35rem 0 1rem;
+    margin:5px 0;
     font-size:1rem;
     font-weight:600;
     color:var(--clr-primary);
+}
+
+#productDescription{
+    margin-bottom: 0;
+}
+
+#productTitle {
+    padding-top: 5px;
 }
 /* ========================================
    HEALTH HUB
