@@ -1359,11 +1359,10 @@ HOW TO TAKE SUVIDA
 ======================================== */
 .product-showcase{
     display:grid;
-    grid-template-columns:480px 1fr;
-    gap:4rem;
+    grid-template-columns:45% 1fr;
+    gap:2.5rem;
     align-items:center;
     background:#fff;
-    padding:30px;
     border-radius:32px;
     border:1px solid var(--clr-border);
     box-shadow:0 25px 60px rgba(15,23,42,.06);
@@ -1377,6 +1376,7 @@ HOW TO TAKE SUVIDA
     width: 100%;
     height: 100%;
     object-fit: cover;
+    height: 570px;
 }
 
 .product-glow{
@@ -1400,10 +1400,15 @@ HOW TO TAKE SUVIDA
 
 .product-visual img{
     width:100%;
+    height: 100%;
     position:relative;
     z-index:2;
     filter:drop-shadow(0 28px 40px rgba(0,0,0,.10));
     transition:.45s;
+}
+
+.product-details{
+    padding: 15px 30px 15px 0;
 }
 
 .product-features{
