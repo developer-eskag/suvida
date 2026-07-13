@@ -1189,6 +1189,12 @@ HOW TO TAKE SUVIDA
 /* ========================================
    HEALTH BENEFITS
 ======================================== */
+.benefits-grid{
+    display:grid;
+    grid-template-columns:480px 1fr;
+    gap:5rem;
+    align-items:start;
+}
 
 .health-benefits{
     background:#fff;
@@ -1209,43 +1215,25 @@ HOW TO TAKE SUVIDA
     top:120px;
 }
 
-.benefits-image img{
+.image-card{
+    overflow:hidden;
+    border-radius:28px;
+    box-shadow:0 25px 60px rgba(16,24,40,.08);
+}
+
+.image-card img{
+    width:100%;
+    display:block;
+}
+
+/* .benefits-image img{
     width:100%;
     aspect-ratio:4/5;
     object-fit:cover;
     border-radius:32px;
     display:block;
     box-shadow:var(--shadow-lg);
-}
-
-.benefits-image-card{
-    margin-top:-70px;
-    margin-left:25px;
-    margin-right:25px;
-    position:relative;
-    background:#fff;
-    padding:28px;
-    border-radius:24px;
-    box-shadow:0 20px 60px rgba(15,23,42,.12);
-    border:1px solid var(--clr-border);
-}
-
-.benefits-image-card span{
-    color:var(--clr-primary);
-    font-size:13px;
-    font-weight:700;
-    text-transform:uppercase;
-    letter-spacing:.08em;
-}
-
-.benefits-image-card h3{
-    margin:10px 0;
-}
-
-.benefits-image-card p{
-    margin:0;
-}
-
+} */
 
 /* Accordion */
 
@@ -1303,14 +1291,14 @@ HOW TO TAKE SUVIDA
 
 .benefit-toggle{
     margin-left:auto;
-    width:42px;
-    height:42px;
+    width:28px;
+    height:28px;
     border-radius:50%;
     background:var(--clr-primary);
     color:#fff;
     display:grid;
     place-items:center;
-    font-size:22px;
+    font-size:18px;
     transition:.35s;
 }
 
