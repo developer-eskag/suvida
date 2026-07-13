@@ -1191,7 +1191,7 @@ HOW TO TAKE SUVIDA
 ======================================== */
 .benefits-grid{
     display:grid;
-    grid-template-columns:480px 1fr;
+    grid-template-columns:46% 54%;
     gap:5rem;
     align-items:start;
 }
@@ -1212,18 +1212,24 @@ HOW TO TAKE SUVIDA
 /* LEFT */
 .benefits-image{
     position:sticky;
-    top:120px;
+    top:110px;
+    align-self:start;
+    height:calc(100vh - 140px);
 }
 
 .image-card{
     overflow:hidden;
     border-radius:28px;
     box-shadow:0 25px 60px rgba(16,24,40,.08);
+    height:100%;
+    border-radius:32px;
 }
 
 .image-card img{
     width:100%;
     display:block;
+    height:100%;
+    object-fit:cover;
 }
 
 .benefits-content h2{
@@ -1287,7 +1293,6 @@ HOW TO TAKE SUVIDA
 .benefit-header{
     width:100%;
     display:flex;
-    align-items:center;
     gap:22px;
     padding:18px;
     cursor:pointer;
