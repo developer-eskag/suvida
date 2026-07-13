@@ -1226,6 +1226,25 @@ HOW TO TAKE SUVIDA
     display:block;
 }
 
+.benefits-content h2{
+    margin:18px 0 28px;
+}
+
+.benefits-intro{
+    margin-bottom:38px;
+}
+
+.benefits-intro p{
+    margin-bottom:18px;
+    line-height:1.9;
+    color:var(--clr-body);
+}
+
+.benefits-highlight{
+    font-weight:600;
+    color:var(--clr-heading);
+}
+
 /* .benefits-image img{
     width:100%;
     aspect-ratio:4/5;
@@ -1264,21 +1283,6 @@ HOW TO TAKE SUVIDA
     padding:24px;
     cursor:pointer;
     background:none;
-}
-
-.benefit-icon{
-    width:62px;
-    height:62px;
-    flex-shrink:0;
-    border-radius:18px;
-    display:grid;
-    place-items:center;
-    font-size:28px;
-    background:linear-gradient(
-    135deg,
-    var(--clr-primary),
-    #d92cb0);
-    color:#fff;
 }
 
 .benefit-header h3{
