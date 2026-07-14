@@ -1864,7 +1864,7 @@ COMMUNITY IMPACT
     display:grid;
     grid-template-columns:repeat(4,1fr);
     gap:24px;
-    margin-top:60px;
+    margin-top:25px;
 }
 
 .impact-stat{
@@ -1955,7 +1955,7 @@ COMMUNITY IMPACT
 
 .impact-cta{
     text-align:center;
-    margin-top:50px;
+    margin-top:25px;
 }
 
 .impact-cta p{
@@ -2122,7 +2122,7 @@ WOMEN'S HEALTH HUB
 }
 
 .article-content{
-    padding:28px;
+    padding:22px;
 }
 
 .article-category{
@@ -2133,25 +2133,26 @@ WOMEN'S HEALTH HUB
     color:var(--clr-primary);
     font-size:.82rem;
     font-weight:700;
-    margin-bottom:18px;
+    margin-bottom:12px;
 }
 
 .article-content h3{
-    font-size:1.35rem;
+    font-size:16px;
     line-height:1.45;
-    margin-bottom:15px;
+    margin-bottom:13px;
 }
 
 .article-content p{
-    margin-bottom:25px;
+    margin-bottom:15px;
     color:var(--clr-body);
+    font-size: 13px;
 }
 
 .article-footer{
     display:flex;
     justify-content:space-between;
     align-items:center;
-    padding-top:18px;
+    padding-top:15px;
     border-top:1px solid var(--clr-border);
 }
 
