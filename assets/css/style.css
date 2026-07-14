@@ -1341,15 +1341,6 @@ HOW TO TAKE SUVIDA
     color:var(--clr-heading);
 }
 
-/* .benefits-image img{
-    width:100%;
-    aspect-ratio:4/5;
-    object-fit:cover;
-    border-radius:32px;
-    display:block;
-    box-shadow:var(--shadow-lg);
-} */
-
 /* Accordion */
 
 .benefits-accordion{
@@ -1632,66 +1623,93 @@ HOW TO TAKE SUVIDA
 #productTitle {
     padding-top: 5px;
 }
+
 /* ========================================
-   HEALTH HUB
+   24/7 HELPLINE STRIP
 ======================================== */
-
-.health-grid{
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:24px;
-}
-
-.health-card{
-    background:var(--clr-white);
-    border-radius:24px;
+.helpline-strip{
+    position:relative;
     overflow:hidden;
-    box-shadow:var(--shadow-sm);
-    transition:var(--transition);
+    background:
+        radial-gradient(circle at left,#8B00D7 0%,transparent 35%),
+        radial-gradient(circle at right,#D72CB0 0%,transparent 35%),
+        linear-gradient(90deg,#8A00D4,#C015A8);
 }
 
-.health-card:hover{
-    transform:translateY(-6px);
-    box-shadow:var(--shadow-md);
+.helpline-strip::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:
+    radial-gradient(rgba(255,255,255,.18) 1px,transparent 1px);
+    background-size:22px 22px;
+    opacity:.15;
 }
 
-.health-card-image{
-    height:240px;
-    overflow:hidden;
+.helpline-inner{
+    position:relative;
+    z-index:2;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:2rem;
+    padding:26px 0;
 }
 
-.health-card-image img{
-    width:100%;
-    height:100%;
-    object-fit:cover;
-
-    transition:.6s ease;
+.helpline-icon{
+    width:72px;
+    height:72px;
+    flex-shrink:0;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:rgba(255,255,255,.12);
+    border:1px solid rgba(255,255,255,.25);
+    backdrop-filter:blur(10px);
 }
 
-.health-card:hover img{
-    transform:scale(1.05);
+.helpline-icon svg{
+    width:34px;
+    color:#fff;
 }
 
-.health-card-content{
-    padding:1.5rem;
+.helpline-content{
+    flex:1;
 }
 
-.health-card-content span{
-    display:inline-block;
-    color:var(--clr-primary);
-    font-size:13px;
+.helpline-content span{
+    display:block;
+    color:#fff;
+    font-size:.9rem;
     font-weight:700;
-    margin-bottom:.75rem;
+    text-transform:uppercase;
+    letter-spacing:.08em;
+    opacity:.9;
 }
 
-.health-card-content h3{
-    font-size:1.25rem;
-    margin-bottom:.75rem;
+.helpline-content h3{
+    color:#fff;
+    margin:.35rem 0;
+    font-size:2rem;
 }
 
-.health-card-content p{
-    font-size:.95rem;
-    color:var(--clr-body);
+.helpline-content p{
+    color:rgba(255,255,255,.85);
+    margin:0;
+}
+
+.helpline-number{
+    color:#fff;
+    text-decoration:none;
+    font-size:2.4rem;
+    font-weight:800;
+    white-space:nowrap;
+    transition:.3s;
+}
+
+.helpline-number:hover{
+    transform:scale(1.05);
 }
 
 /* ========================================
@@ -2179,8 +2197,70 @@ SUCCESS STORIES
     line-height:1.2;
 }
 
+/* ========================================
+   HEALTH HUB
+======================================== */
+
+.health-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:24px;
+}
+
+.health-card{
+    background:var(--clr-white);
+    border-radius:24px;
+    overflow:hidden;
+    box-shadow:var(--shadow-sm);
+    transition:var(--transition);
+}
+
+.health-card:hover{
+    transform:translateY(-6px);
+    box-shadow:var(--shadow-md);
+}
+
+.health-card-image{
+    height:240px;
+    overflow:hidden;
+}
+
+.health-card-image img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+
+    transition:.6s ease;
+}
+
+.health-card:hover img{
+    transform:scale(1.05);
+}
+
+.health-card-content{
+    padding:1.5rem;
+}
+
+.health-card-content span{
+    display:inline-block;
+    color:var(--clr-primary);
+    font-size:13px;
+    font-weight:700;
+    margin-bottom:.75rem;
+}
+
+.health-card-content h3{
+    font-size:1.25rem;
+    margin-bottom:.75rem;
+}
+
+.health-card-content p{
+    font-size:.95rem;
+    color:var(--clr-body);
+}
+
 /*=========================================
-WOMEN'S HEALTH HUB
+ARTICLE
 =========================================*/
 
 .health-hub{
