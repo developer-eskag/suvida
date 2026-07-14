@@ -2253,6 +2253,7 @@ COMMUNITY IMPACT
 .mag-stat span{
     font-size:.9rem;
     color:var(--clr-body);
+    font-weight: 700;
 }
 
 /*=========================================
