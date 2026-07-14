@@ -1632,12 +1632,17 @@ HOW TO TAKE SUVIDA
 
 .planning-card{
     background:#fff;
-    padding:28px;
+    padding:18px;
     border-radius:22px;
     border:1px solid var(--clr-border);
     transition:.35s;
     position:relative;
     overflow:hidden;
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+    align-items:center;
+    align-content:center;
 }
 
 .planning-card::before{
@@ -1663,16 +1668,23 @@ HOW TO TAKE SUVIDA
     opacity:1;
 }
 
+.planning-card h4 {
+    font-size: 18px;
+}
+
+.planning-card p{
+    font-size: 13px;
+}
+
 .planning-icon{
-    width:62px;
-    height:62px;
+    width:30px;
+    height:30px;
     border-radius:50%;
     background:#FFF0F8;
     display:flex;
     align-items:center;
     justify-content:center;
-    font-size:28px;
-    margin-bottom:18px;
+    font-size:13px;
 }
 
 .planning-visual{
