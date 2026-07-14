@@ -1579,6 +1579,9 @@ HOW TO TAKE SUVIDA
     transition:.35s;
 }
 
+.magazine-actions .btn-primary,
+.impact-cta .btn-primary,
+.stories-content .btn-primary,
 .product-details .btn-primary:hover{
     transform:translateY(-4px);
     box-shadow:0 20px 38px rgba(192,16,160,.32);
@@ -2427,6 +2430,148 @@ SUCCESS STORIES
     color:var(--clr-body);
 }
 
+/*========================================
+ NEWSLETTER STRIP
+========================================*/
+.newsletter-strip{
+    position:relative;
+    padding:70px 0;
+    overflow:hidden;
+    background:
+    linear-gradient(
+        135deg,
+        #7D00D8 0%,
+        #B013C4 45%,
+        #D31A97 100%
+    );
+    color:#fff;
+}
+
+/* Decorative Elements */
+.newsletter-strip::before{
+    content:"";
+    position:absolute;
+    width:340px;
+    height:340px;
+    left:-120px;
+    bottom:-180px;
+    border-radius:50%;
+    background:
+    radial-gradient(
+        circle,
+        rgba(255,255,255,.18),
+        transparent 70%
+    );
+}
+
+.newsletter-strip::after{
+    content:"";
+    position:absolute;
+    width:260px;
+    height:260px;
+    right:-120px;
+    top:-80px;
+    border-radius:50%;
+    background:
+    radial-gradient(
+        circle,
+        rgba(255,255,255,.12),
+        transparent 70%
+    );
+}
+
+.newsletter-inner{
+    position:relative;
+    z-index:2;
+    max-width:1080px;
+    margin:auto;
+    text-align:center;
+}
+
+.newsletter-tag{
+    display:inline-block;
+    padding:8px 20px;
+    border-radius:40px;
+    background:rgba(255,255,255,.15);
+    border:1px solid rgba(255,255,255,.2);
+    font-size:.8rem;
+    letter-spacing:2px;
+    text-transform:uppercase;
+    margin-bottom:18px;
+}
+
+.newsletter-header h2{
+    color:#fff;
+    margin-bottom:12px;
+    font-size:2.2rem;
+}
+
+.newsletter-header p{
+    max-width:700px;
+    margin:auto;
+    color:rgba(255,255,255,.88);
+}
+
+.newsletter-form{
+    margin-top:40px;
+    display:grid;
+    grid-template-columns:
+    1fr
+    1.2fr
+    1fr
+    180px;
+    gap:0;
+    background:#fff;
+    padding:8px;
+    border-radius:999px;
+    box-shadow:0 25px 60px rgba(0,0,0,.18);
+}
+
+.newsletter-form input,
+.newsletter-form select{
+    border:none;
+    outline:none;
+    padding:18px 22px;
+    font-size:.95rem;
+    background:transparent;
+    border-right:1px solid #ececec;
+}
+
+.newsletter-form select{
+    cursor:pointer;
+}
+
+.newsletter-form input:last-of-type{
+    border-right:1px solid #ececec;
+}
+
+.newsletter-form button{
+    border:none;
+    border-radius:999px;
+    background:
+    linear-gradient(
+        135deg,
+        var(--clr-primary),
+        #d625b5
+    );
+    color:#fff;
+    font-weight:700;
+    cursor:pointer;
+    transition:.35s;
+}
+
+.newsletter-form button:hover{
+    transform:scale(.97);
+    filter:brightness(1.05);
+}
+
+.newsletter-inner small{
+    display:block;
+    margin-top:20px;
+    color:rgba(255,255,255,.8);
+    font-size:.85rem;
+}
+
 /*=========================================
 ARTICLE
 =========================================*/
@@ -2786,10 +2931,10 @@ NEWSLETTER
     transition:.3s;
 }
 
-.newsletter-form button:hover{
+/* .newsletter-form button:hover{
     transform:translateY(-2px);
     background:#d91fb2;
-}
+} */
 
 /*=========================================
 CONTACT INFO
