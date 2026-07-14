@@ -2719,12 +2719,12 @@ ARTICLE
     display:grid;
     grid-template-columns:
         28%
+        17%
+        11%
         12%
-        12%
-        24%
-        24%;
+        22%;
     gap:2rem;
-    padding-bottom:3rem;
+    padding-bottom:2rem;
     border-bottom:1px solid rgba(255,255,255,.08);
 }
 
@@ -2884,7 +2884,6 @@ CONTACT INFO
 .footer-contact ul{
     display:flex;
     flex-direction:column;
-    gap:.9rem;
 }
 
 .footer-contact li{
@@ -2912,12 +2911,12 @@ CONTACT INFO
 
 .footer-contact .address{
     display:inline-block;
-    line-height:1.8;
+    line-height:1.5;
+    margin-top: 12px;
 }
 
 .footer-contact .address strong{
     display:block;
-    margin-bottom:6px;
 }
 
 .footer-contact .address{
