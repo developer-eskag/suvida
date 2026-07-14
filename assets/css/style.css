@@ -2435,7 +2435,7 @@ SUCCESS STORIES
 ========================================*/
 .newsletter-strip{
     position:relative;
-    padding:70px 0;
+    padding:25px 0;
     overflow:hidden;
     background:
     linear-gradient(
@@ -2483,7 +2483,7 @@ SUCCESS STORIES
 .newsletter-inner{
     position:relative;
     z-index:2;
-    max-width:1080px;
+    max-width:930px;
     margin:auto;
     text-align:center;
 }
@@ -2497,12 +2497,12 @@ SUCCESS STORIES
     font-size:.8rem;
     letter-spacing:2px;
     text-transform:uppercase;
-    margin-bottom:18px;
+    margin-bottom:12px;
 }
 
 .newsletter-header h2{
     color:#fff;
-    margin-bottom:12px;
+    margin-bottom:5px;
     font-size:2.2rem;
 }
 
@@ -2513,7 +2513,7 @@ SUCCESS STORIES
 }
 
 .newsletter-form{
-    margin-top:40px;
+    margin-top:20px;
     display:grid;
     grid-template-columns:
     1fr
@@ -2522,7 +2522,7 @@ SUCCESS STORIES
     180px;
     gap:0;
     background:#fff;
-    padding:8px;
+    padding:4px;
     border-radius:999px;
     box-shadow:0 25px 60px rgba(0,0,0,.18);
 }
@@ -2531,7 +2531,7 @@ SUCCESS STORIES
 .newsletter-form select{
     border:none;
     outline:none;
-    padding:18px 22px;
+    padding:10px 12px;
     font-size:.95rem;
     background:transparent;
     border-right:1px solid #ececec;
@@ -2544,8 +2544,12 @@ SUCCESS STORIES
 .newsletter-form input:last-of-type{
     border-right:1px solid #ececec;
 }
-
+.newsletter-form .nws-btn-warp{
+    display: flex;
+    padding-left: 10px;
+}
 .newsletter-form button{
+    flex: 1;
     border:none;
     border-radius:999px;
     background:
@@ -2567,7 +2571,7 @@ SUCCESS STORIES
 
 .newsletter-inner small{
     display:block;
-    margin-top:20px;
+    margin-top:15px;
     color:rgba(255,255,255,.8);
     font-size:.85rem;
 }
