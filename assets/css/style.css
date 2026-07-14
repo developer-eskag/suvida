@@ -615,6 +615,90 @@
 }
 
 /* ========================================
+   SUVIDA SMALL CTA
+======================================== */
+.partner-strip{
+    position:relative;
+    overflow:hidden;
+    background:
+        radial-gradient(circle at left,#8A00D4 0%,transparent 45%),
+        radial-gradient(circle at right,#E03AB5 0%,transparent 45%),
+        linear-gradient(90deg,#8B00D7,#C017A7);
+}
+
+.partner-strip-inner{
+    min-height:220px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:35px 6vw;
+    position:relative;
+    overflow:hidden;
+}
+
+.partner-content{
+    width:min(760px,100%);
+    margin:auto;
+    text-align:center;
+    color:#fff;
+    z-index:2;
+}
+
+.partner-tag{
+    display:inline-flex;
+    padding:8px 18px;
+    border-radius:30px;
+    background:rgba(255,255,255,.15);
+    backdrop-filter:blur(12px);
+    font-weight:700;
+    margin-bottom:18px;
+}
+
+.partner-content h2{
+    color:#fff;
+    margin-bottom:14px;
+    font-size:2rem;
+}
+
+.partner-content p{
+    color:rgba(255,255,255,.92);
+    margin-bottom:26px;
+    max-width:640px;
+    margin-inline:auto;
+}
+
+.partner-actions{
+    display:flex;
+    justify-content:center;
+    gap:16px;
+}
+
+.partner-illustration{
+    width:170px;
+    flex-shrink:0;
+    z-index:2;
+    transition:.4s;
+}
+
+.partner-strip:hover .left{
+    transform:translateX(-8px) rotate(-4deg);
+}
+
+.partner-strip:hover .right{
+    transform:translateX(8px) rotate(4deg);
+}
+
+.partner-strip::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:
+    radial-gradient(circle,rgba(255,255,255,.10) 1px,transparent 1px);
+    background-size:22px 22px;
+    opacity:.15;
+}
+
+/* ========================================
    SUVIDA GUIDE
 ======================================== */
 
