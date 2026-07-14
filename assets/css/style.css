@@ -1579,10 +1579,7 @@ HOW TO TAKE SUVIDA
     transition:.35s;
 }
 
-.magazine-actions .btn-primary,
-.impact-cta .btn-primary,
-.stories-content .btn-primary,
-.product-details .btn-primary:hover{
+ .btn-primary:hover{
     transform:translateY(-4px);
     box-shadow:0 20px 38px rgba(192,16,160,.32);
 }
