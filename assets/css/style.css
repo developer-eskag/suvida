@@ -1627,7 +1627,7 @@ HOW TO TAKE SUVIDA
     display:grid;
     grid-template-columns:repeat(2,1fr);
     gap:24px;
-    margin-top:40px;
+    margin-top:30px;
 }
 
 .planning-card{
@@ -1709,9 +1709,10 @@ HOW TO TAKE SUVIDA
 
 .planning-visual img{
     width:100%;
-    max-width:480px;
     position:relative;
     z-index:2;
+    border-radius: 22px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
 }
 
 .planning-timeline{
