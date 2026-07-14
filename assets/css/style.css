@@ -1366,6 +1366,7 @@ HOW TO TAKE SUVIDA
     border-radius:32px;
     border:1px solid var(--clr-border);
     box-shadow:0 25px 60px rgba(15,23,42,.06);
+    overflow: hidden;
 }
 
 .product-visual{
@@ -1401,7 +1402,6 @@ HOW TO TAKE SUVIDA
     height: 100%;
     object-fit: cover;
     position:relative;
-    z-index:2;
     filter:drop-shadow(0 28px 40px rgba(0,0,0,.10));
     transition:.45s;
 }
@@ -1411,6 +1411,10 @@ HOW TO TAKE SUVIDA
     grid-template-columns:repeat(2,1fr);
     gap:16px;
     margin:25px 0;
+}
+
+.product-details{
+    padding: 12px 30px 12px 0;
 }
 
 .feature-card{
@@ -1472,7 +1476,7 @@ HOW TO TAKE SUVIDA
     display:inline-flex;
     align-items:center;
     gap:.75rem;
-    margin-top:2rem;
+    margin-top:1rem;
     padding:14px 30px;
     border-radius:999px;
     background:linear-gradient(
