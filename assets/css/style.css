@@ -302,6 +302,7 @@
     overflow:hidden;
     box-shadow: 0 25px 80px rgba(0,0,0,.2);
     margin-bottom: -128px;
+    background: rgba(255, 255, 255, 0.65);
 }
 
 .stat-item{
@@ -488,6 +489,7 @@
     border-radius:28px;
     box-shadow:var(--shadow-lg);
     cursor: pointer;
+    max-height: 558px;
 }
 
 .video-wrapper::after{
@@ -971,7 +973,7 @@ HOW TO TAKE SUVIDA
 .guide-steps{
     display:flex;
     flex-direction:column;
-    gap:1.5rem;
+    gap:1rem;
 }
 
 .step{
@@ -1049,8 +1051,8 @@ HOW TO TAKE SUVIDA
 .step-content{
     position: relative;
     background:#fff;
-    padding:20px;
-    border-radius:22px;
+    padding: 16px 18px;
+    border-radius:12px;
     box-shadow:0 10px 30px rgba(0,0,0,.05);
     border:1px solid rgba(192,16,160,.08);
     transition:.45s ease;
@@ -1099,10 +1101,8 @@ HOW TO TAKE SUVIDA
     gap:10px;
     margin-bottom:.5rem;
     transition:.3s;
-}
-
-.step:hover h3{
-    color:var(--clr-primary);
+    font-size: 18px;
+    color: var(--clr-primary);
 }
 
 .step-content h3::after{
@@ -1131,6 +1131,7 @@ HOW TO TAKE SUVIDA
     justify-content:center;
     align-items:center;
     min-height:570px;
+    transform: scale(.85);
 }
 
 .calendar-glow{
@@ -1257,12 +1258,12 @@ HOW TO TAKE SUVIDA
     }
 }
 
-.guide-bottom{
+/* .guide-bottom{
     margin-top:1rem;
     display:grid;
     grid-template-columns:repeat(3,1fr);
     gap:24px;
-}
+} */
 
 .guide-highlight{
     background:#fff;
@@ -1382,6 +1383,7 @@ HOW TO TAKE SUVIDA
 
 .benefit-header h3{
     margin-bottom:5px;
+    font-size: 18px;
 }
 
 .benefit-header p{
@@ -1399,6 +1401,10 @@ HOW TO TAKE SUVIDA
     place-items:center;
     font-size:18px;
     transition:.35s;
+}
+
+.benefit-item.active h3{
+    color: var(--clr-primary);
 }
 
 .benefit-item.active .benefit-toggle{
@@ -1488,9 +1494,9 @@ HOW TO TAKE SUVIDA
 }
 
 .product-features{
-    display:grid;
-    grid-template-columns:repeat(2,1fr);
-    gap:16px;
+    display:flex: ;
+    flex-direction: column;
+    gap:14px;
     margin:25px 0;
 }
 
@@ -1499,16 +1505,36 @@ HOW TO TAKE SUVIDA
 }
 
 .feature-card{
-    padding:18px;
-    background:#fff;
-    border:1px solid var(--clr-border);
-    border-radius:18px;
-    transition:.3s;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:14px 18px 14px 20px;
+    background:rgba(192,16,160,.03);
+    border:none;
+    border-left:3px solid var(--clr-primary);
+    border-radius:10px;
+    transition:.3s ease;
+    position: relative;
+}
+
+.feature-card::before{
+    content:"";
+    position:absolute;
+    left:0;
+    top:12px;
+    bottom:12px;
+    width:4px;
+    border-radius:4px;
+    background:linear-gradient(
+        to bottom,
+        var(--clr-primary),
+        #f05fc7
+    );
 }
 
 .feature-card:hover{
-    border-color:var(--clr-primary);
-    transform:translateY(-3px);
+    background:rgba(192,16,160,.06);
+    transform:translateX(6px);
 }
 
 .composition-card{
@@ -1517,6 +1543,22 @@ HOW TO TAKE SUVIDA
     border-radius:18px;
     background:#FFF8FC;
     border:1px solid rgba(192,16,160,.12);
+}
+
+.feature-card strong{
+    margin:0;
+    font-size:1rem;
+    font-weight:700;
+    color:var(--clr-heading);
+    text-align:right;
+}
+
+.feature-card small{
+    margin:0;
+    font-size:.95rem;
+    font-weight:600;
+    color:var(--clr-body);
+    letter-spacing:.2px;
 }
 
 .composition-card h4 {
