@@ -544,6 +544,7 @@
     border-radius:20px;
     padding:1rem 1.4rem;
     box-shadow:var(--shadow-md);
+    z-index: 2;
 }
 
 .video-badge strong{
@@ -1272,9 +1273,7 @@ HOW TO TAKE SUVIDA
     text-align:center;
     border:1px solid var(--clr-border);
     box-shadow:var(--shadow-sm);
-    display: flex;
-    flex-wrap: wrap;
-    align-content: center;
+    border-left:8px solid var(--clr-primary);
 }
 
 /* ========================================
@@ -1494,10 +1493,9 @@ HOW TO TAKE SUVIDA
 }
 
 .product-features{
-    display:flex: ;
+    display:flex;
     flex-direction: column;
-    gap:14px;
-    margin:25px 0;
+    margin:10px 0;
 }
 
 .product-details{
@@ -1508,11 +1506,8 @@ HOW TO TAKE SUVIDA
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding:14px 18px 14px 20px;
-    background:rgba(192,16,160,.03);
+    padding:8px 18px 8px 20px;
     border:none;
-    border-left:3px solid var(--clr-primary);
-    border-radius:10px;
     transition:.3s ease;
     position: relative;
 }
@@ -1547,7 +1542,7 @@ HOW TO TAKE SUVIDA
 
 .feature-card strong{
     margin:0;
-    font-size:1rem;
+    font-size:14px;
     font-weight:700;
     color:var(--clr-heading);
     text-align:right;
@@ -1555,8 +1550,8 @@ HOW TO TAKE SUVIDA
 
 .feature-card small{
     margin:0;
-    font-size:.95rem;
-    font-weight:600;
+    font-size: 13px;
+    font-weight:500;
     color:var(--clr-body);
     letter-spacing:.2px;
 }
