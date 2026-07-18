@@ -2128,6 +2128,88 @@ COMMUNITY IMPACT
     font-weight:600;
 }
 
+/*========================================
+    IMAGE LIGHTBOX
+========================================*/
+.image-lightbox{
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,.88);
+    backdrop-filter:blur(8px);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    opacity:0;
+    visibility:hidden;
+    transition:.35s;
+    z-index:99999;
+}
+
+.image-lightbox.active{
+    opacity:1;
+    visibility:visible;
+}
+
+#lightboxImage{
+    max-width:90vw;
+    max-height:85vh;
+    border-radius:18px;
+    box-shadow:0 30px 80px rgba(0,0,0,.4);
+    object-fit:contain;
+}
+
+.lightbox-close,
+.lightbox-prev,
+.lightbox-next{
+    position:absolute;
+    width:54px;
+    height:54px;
+    border-radius:50%;
+    border:none;
+    background:rgba(255,255,255,.12);
+    color:#fff;
+    font-size:26px;
+    cursor:pointer;
+    transition:.3s;
+    backdrop-filter:blur(10px);
+}
+
+.lightbox-close{
+    top:40px;
+    right:40px;
+}
+
+.lightbox-prev{
+    left:40px;
+    top:50%;
+    transform:translateY(-50%);
+}
+
+.lightbox-next{
+    right:40px;
+    top:50%;
+    transform:translateY(-50%);
+}
+
+.lightbox-close:hover,
+.lightbox-prev:hover,
+.lightbox-next:hover{
+    background:var(--clr-primary);
+}
+
+.gallery-item{
+    overflow:hidden;
+    cursor:pointer;
+}
+
+.gallery-item img{
+    transition:.45s;
+}
+
+.gallery-item:hover img{
+    transform:scale(1.06);
+}
+
 /* ========================================
    MAGAZINE
 ======================================== */
