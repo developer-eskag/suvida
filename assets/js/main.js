@@ -335,4 +335,61 @@ document.addEventListener("DOMContentLoaded", function () {
     showProduct(0);
     startAutoSlide();
 
+    /*=========================================
+        COMMUNITY GALLERY LIGHTBOX
+    =========================================*/
+
+    const galleryImages = document.querySelectorAll(".gallery-image");
+    const lightbox = document.getElementById("imageLightbox");
+    const lightboxImg = document.getElementById("lightboxImage");
+    const closeLightbox = document.getElementById("closeLightbox");
+    const prevBtn = document.getElementById("lightboxPrev");
+    const nextBtn = document.getElementById("lightboxNext");
+
+    let currentGalleryIndex = 0;
+    function openLightbox(index){
+        currentGalleryIndex = index;
+        lightboxImg.src = galleryImages[index].src;
+        lightbox.classList.add("active");
+        document.body.style.overflow = "hidden";
+    }
+
+    function closeGallery(){
+        lightbox.classList.remove("active");
+        document.body.style.overflow = "";
+    }
+
+    galleryImages.forEach((img,index)=>{
+        img.addEventListener("click",()=>{
+            openLightbox(index);
+        });
+    });
+    closeLightbox.addEventListener("click",closeGallery);
+    lightbox.addEventListener("click",(e)=>{
+        if(e.target===lightbox){
+            closeGallery();
+        }
+    });
+    prevBtn.addEventListener("click",(e)=>{
+        e.stopPropagation();
+        currentGalleryIndex--;
+        if(currentGalleryIndex<0){
+            currentGalleryIndex=galleryImages.length-1;
+        }
+        lightboxImg.src=galleryImages[currentGalleryIndex].src;
+    });
+    nextBtn.addEventListener("click",(e)=>{
+        e.stopPropagation();
+        currentGalleryIndex++;
+        if(currentGalleryIndex>=galleryImages.length){
+            currentGalleryIndex=0;
+        }
+        lightboxImg.src=galleryImages[currentGalleryIndex].src;
+    });
+    document.addEventListener("keydown",(e)=>{
+        if(!lightbox.classList.contains("active")) return;
+        if(e.key==="Escape") closeGallery();
+        if(e.key==="ArrowLeft") prevBtn.click();
+        if(e.key==="ArrowRight") nextBtn.click();
+    });
 });

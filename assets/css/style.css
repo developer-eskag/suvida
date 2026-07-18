@@ -2014,6 +2014,7 @@ COMMUNITY IMPACT
     height:100%;
     object-fit:cover;
     transition:.6s;
+    object-position: bottom;
 }
 
 .gallery-item:hover img{
